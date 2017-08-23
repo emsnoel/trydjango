@@ -82,3 +82,6 @@ class RestaurantDetailView(DetailView):
     """
 
 
+class RestaurantLocationCreateView(CreateView):
+    form_class = RestaurantCreateForm
+    template_name = 'restaurants/form.html'
