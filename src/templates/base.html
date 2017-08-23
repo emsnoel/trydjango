@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block head-title %}MuyPicky.com{% endblock head-title %}</title>
+    {% include './snippets/css.html' %}
+</head>
+
+<body>
+    <div class='container'>
+        <h1>MuyPicky.com</h1>
+        {% include './snippets/nav.html' %} {% block content %} {% endblock content %} {% include './snippets/js.html' %}
+    </div>
+</body>
+
+</html>
